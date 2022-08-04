@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="formulario">
+                <div class="forms logar">
+                    <h2>Login</h2>
+                    <div class="col">
+                        <label for="">Name</label>
+                        <input type="text" name="name" id="" placeholder="Digite o seu nome">
+                    </div>
+                    <div class="col">
+                        <label for="">Senha</label>
+                        <input type="password" name="name" id="" placeholder="Digite a sua senha">
+                    </div>
+                    <div class="col">
+                        <input type="submit" name="enviar" value="Entrar">
+                    </div>
+                </div>
+                <div class="forms Registar">
+                    <h2>Registar</h2>
+                    <div class="col">
+                        <label for="">Name</label>
+                        <input type="text" name="name" id="" placeholder="Digite o seu nome">
+                    </div>
+                    <div class="col">
+                        <label for="">Senha</label>
+                        <input type="password" name="name" id="" placeholder="Digite a sua senha">
+                    </div>
+                    <div class="col">
+                        <label for="">Confrimar Senha</label>
+                        <input type="password" name="name" id="" placeholder="Digite a sua senha">
+                    </div>
+                    <div class="col">
+                        <input type="submit" name="enviar" value="Registar">
+                    </div>
+                </div>
+            </div>
+            <div class="redes">
+                <div class="butoes">
+                    <button class="btn-1">Login</button>
+                    <button  class="active btn-2">Registar-se</button>
+                </div>
+                <div class="redes-sociais">
+                    <ul>
+                        <li class="fb"><img src="images/036-facebook.png" alt=""></li>
+                        <li class="inst"><img src="images/029-instagram.png" alt=""></li >
+                        <li class="twi"><img src="images/008-twitter.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+         $("button").click(function(e){
+            e.preventDefault()
+             
+        })
+        $(".btn-1").click(function(){
+            $(this).addClass("active");
+            $(".btn-2").removeClass("active")
+            $(".forms").css({
+                transition: '0.4s',
+                left: '0'
+            })
+        })
+        $(".btn-2").click(function(){
+            $(this).addClass("active");
+            $(".btn-1").removeClass("active")
+            $(".forms").css({
+                transition: '0.4s',
+                left: '-100%'
+            })
+        })
+         
+    })
+</script>
+</html>

@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color:  rgb(187,14,255);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 1000px;
+    background-color: #fff;
+    padding: 30px 25px;
+    display:flex;
+    position:relative;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px #000;
+}
+form .formulario{
+    width: 100%;
+    display: flex;
+    position:relative;
+    overflow: hidden; 
+}
+form .formulario .forms{
+    position: relative; 
+    left: 0; 
+}
+form .formulario .forms h2{
+    font-family: 'mulish';
+    color:#fff;
+    background-color: rgb(187,14,255);
+    text-transform: capitalize;
+    text-align: center;
+    padding: 8px 0;
+    margin:10px 10px 30px;
+    border-radius: 50px;
+}
+.col{
+    width: 100%;
+    margin:10px;
+}
+.col label{
+    font-family: 'roboto medium';
+    font-size: 20px;
+    margin: 10px 0;
+}
+.logar{
+    margin-right: 40px;
+}
+/* .Registar{
+    margin-right: 40px;
+} */
+.col input[type='password'],
+.col input[type='text']{
+    display: flex;
+    border:none;
+    outline:none;
+    background:none;
+    width: 400px;
+    height:44px;
+    border:1px solid rgb(209,209,209);
+    padding:10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.col input[type='submit']{
+    border:none;
+    outline:none;
+    background-color: rgb(187,14,255);
+    width: 400px;
+    padding:14px 10px;
+    text-align: center;
+    border-radius: 6px;
+    font-family: 'roboto medium';
+    font-size: 14px;
+    color:#fff;
+    margin-top: 10px;
+}
+.redes{
+    width: 100%;
+    display: block;
+    position:relative;
+    top:55px;
+    padding:30px 20px;
+}
+.butoes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.butoes button{
+    border:none;
+    outline:none;
+    background:none;
+    width: 200px;
+    height:40px;
+    background-color: rgb(187,14,255);
+    margin: 10px;
+    font-family:'mulish';
+    color:#fff;
+    cursor:pointer;
+}
+.butoes button.active{
+    background:none;
+    border:2px solid rgb(187,14,255);
+    color:#000
+}
+button.active:hover{
+    background-color: rgb(187,14,255);
+    color:#fff;
+}
+.redes-sociais{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.redes-sociais ul{
+    display:flex;
+    list-style: none;
+}
+.redes-sociais ul li{
+    margin:30px;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.4s;
+    box-shadow:0px 0px 4px #222;
+    border-radius: 50%;
+}
+.redes-sociais ul li img{
+    height:30px
+}
+.fb:hover{
+    background-color: rgb(0, 0, 2);
+    transition: 0.4s;
+}
+.twi:hover{
+    background-color: rgb(0, 0, 255);
+    transition: 0.4s;
+}
+.inst:hover{
+    background-color: rgb(0, 255, 170);
+}
+ 
